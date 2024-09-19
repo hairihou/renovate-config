@@ -1,0 +1,27 @@
+{
+  "name": "renovate-config",
+  "version": "0.0.0",
+  "description": "hairihou's custom Renovate config presets",
+  "scripts": {
+    "lint": "biome lint .",
+    "format": "biome check --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hairihou/renovate-config.git"
+  },
+  "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hairihou/renovate-config/issues"
+  },
+  "homepage": "https://github.com/hairihou/renovate-config#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.1",
+    "@types/node": "^22.5.5",
+    "lefthook": "^1.7.15",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}

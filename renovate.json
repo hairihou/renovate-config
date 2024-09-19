@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":disableDependencyDashboard",
+    "local>hairihou/renovate-config",
+    "group:allNonMajor"
+  ],
+  "prConcurrentLimit": 3,
+  "rangeStrategy": "bump",
+  "rebaseWhen": "conflicted"
+}
