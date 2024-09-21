@@ -12,7 +12,7 @@ const validateConfig = (): void => {
 
   for (const file of files) {
     try {
-      const result = execSync(`npx --yes --package renovate -- renovate-config-validator --strict ${file}`);
+      const result = execSync(`pnpm --package=renovate dlx renovate-config-validator --strict ${file}`);
       console.info(result.toString());
     } catch (error) {
       // biome-ignore lint/suspicious/noExplicitAny: renovate error output is not typed
