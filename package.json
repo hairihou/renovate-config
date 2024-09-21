@@ -1,7 +1,7 @@
 {
   "name": "renovate-config",
   "version": "0.0.0",
-  "description": "hairihou's custom Renovate config presets",
+  "main": "index.js",
   "scripts": {
     "lint": "biome lint .",
     "format": "biome check --write .",
@@ -16,9 +16,8 @@
   "bugs": {
     "url": "https://github.com/hairihou/renovate-config/issues"
   },
-  "homepage": "https://github.com/hairihou/renovate-config#readme",
   "devDependencies": {
-    "@biomejs/biome": "^1.9.1",
+    "@biomejs/biome": "^1.9.2",
     "@types/node": "^22.5.5",
     "lefthook": "^1.7.15",
     "tsx": "^4.19.1",

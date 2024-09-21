@@ -1,0 +1,4 @@
+{
+  "schedule": ["after 8:00 before 17:00 every weekend"],
+  "timezone": "Asia/Tokyo"
+}

@@ -1,0 +1,9 @@
+{
+  "extends": ["customManagers:biomeVersions", "group:definitelyTyped"],
+  "packageRules": [
+    {
+      "extends": ["packages:linters"],
+      "matchPackageNames": ["@biomejs/biome"]
+    }
+  ]
+}
