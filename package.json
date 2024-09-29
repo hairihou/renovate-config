@@ -2,7 +2,6 @@
   "name": "renovate-config",
   "version": "0.0.0",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "lint": "biome lint .",
     "format": "biome check --write .",
@@ -14,9 +13,6 @@
   },
   "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hairihou/renovate-config/issues"
-  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
     "@types/node": "^22.5.5",
