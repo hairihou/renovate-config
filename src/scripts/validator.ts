@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process';
 import { readdirSync } from 'node:fs';
 
-const ignoreTargetFileNames: string[] = ['biome.json', 'package.json', 'tsconfig.json'] as const satisfies string[];
+const ignoreTargetFileNames: string[] = ['package.json', 'tsconfig.json'] as const satisfies string[];
 
 const fileIsIgnoreTarget = (file: string): boolean =>
   !(file.endsWith('.json') || file.endsWith('.json5')) || ignoreTargetFileNames.includes(file);
@@ -15,8 +15,12 @@ const validateConfig = (): void => {
       const result = execSync(`pnpm --package=renovate dlx renovate-config-validator --strict ${file}`);
       console.info(result.toString());
     } catch (error) {
-      // biome-ignore lint/suspicious/noExplicitAny: renovate error output is not typed
-      console.error((error as any).output.toString());
+      if (error instanceof Error && 'output' in error) {
+        const errorWithOutput = error as { output: Buffer };
+        console.error(errorWithOutput.output.toString());
+      } else {
+        console.error(error);
+      }
       errorFiles.push(file);
     }
   }

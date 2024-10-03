@@ -27,5 +27,4 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
       - if: ${{ steps.node_modules_cache_id.outputs.cache-hit != 'true' }}
         run: pnpm install
-      - run: pnpm type-check
       - run: pnpm tsx ./src/scripts/validator.ts

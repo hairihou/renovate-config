@@ -1,6 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "local>hairihou/renovate-config", "group:allNonMajor"],
+  "extends": [
+    "config:recommended",
+    ":disableDependenciesDashboard",
+    "group:allNonMajor",
+    "github>hairihou/renovate-config"
+  ],
   "draftPR": true,
   "prConcurrentLimit": 3,
   "rangeStrategy": "bump",
