@@ -1,7 +1,3 @@
 {
-  "extends": [
-    ":disableDependencyDashboard",
-    "github>hairihou/renovate-config:node-project",
-    "github>hairihou/renovate-config:schedule"
-  ]
+  "extends": ["github>hairihou/renovate-config:node-project", "github>hairihou/renovate-config:schedule"]
 }
