@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":disableDependenciesDashboard",
+    ":disableDependencyDashboard",
     "group:allNonMajor",
     "github>hairihou/renovate-config"
   ],
