@@ -1,5 +1,5 @@
 {
-  "extends": ["customManagers:biomeVersions", "group:definitelyTyped"],
+  "extends": ["customManagers:biomeVersions", "group:definitelyTyped", "helpers:disableTypesNodeMajor"],
   "packageRules": [
     {
       "extends": ["packages:linters"],
