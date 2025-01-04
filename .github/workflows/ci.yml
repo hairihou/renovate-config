@@ -19,12 +19,7 @@ jobs:
           version: 9
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - uses: actions/cache@v4
-        id: node_modules_cache_id
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-      - if: ${{ steps.node_modules_cache_id.outputs.cache-hit != 'true' }}
-        run: pnpm install
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install
       - run: pnpm tsx ./src/scripts/validator.ts
