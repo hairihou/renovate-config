@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "validate": "tsx ./src/scripts/validator.ts"
   },
   "repository": {
     "type": "git",

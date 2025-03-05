@@ -21,5 +21,7 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-      - run: pnpm install
-      - run: pnpm tsx ./src/scripts/validator.ts
+      - run: |
+          pnpm install
+          pnpm lint
+          pnpm validate
