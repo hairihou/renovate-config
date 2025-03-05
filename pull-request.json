@@ -1,0 +1,4 @@
+{
+  "draftPR": true,
+  "rebaseWhen": "conflicted"
+}

@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "extends": ["packages:linters"],
-      "matchPackageNames": ["@biomejs/biome"]
+      "matchPackageNames": ["@biomejs/biome", "globals", "**/eslint-**"]
     },
     {
       "matchPackageNames": ["lefthook"],
