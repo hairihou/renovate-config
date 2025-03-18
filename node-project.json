@@ -2,11 +2,23 @@
   "extends": ["customManagers:biomeVersions", "group:definitelyTyped", "helpers:disableTypesNodeMajor"],
   "packageRules": [
     {
+      "groupName": "Linters",
+      "groupSlug": "linters",
       "extends": ["packages:linters"],
       "matchPackageNames": ["@biomejs/biome", "globals", "**/eslint-**"]
     },
     {
-      "matchPackageNames": ["lefthook"],
+      "groupName": "Storybook",
+      "groupSlug": "storybook",
+      "matchPackageNames": ["@chromatic-com/storybook", "@storybook/**", "storybook"]
+    },
+    {
+      "groupName": "Tailwind",
+      "groupSlug": "tailwind",
+      "matchPackageNames": ["@tailwindcss/**", "style-dictionary", "tailwindcss"]
+    },
+    {
+      "matchPackageNames": ["happy-dom", "lefthook"],
       "matchUpdateTypes": ["patch"],
       "enabled": false
     }
