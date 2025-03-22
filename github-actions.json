@@ -4,7 +4,7 @@
       "groupName": "3rdparty Actions",
       "groupSlug": "3rdparty-actions",
       "matchDepTypes": ["action"],
-      "matchPackageNames": ["^(?!actions/).*"],
+      "matchPackageNames": ["!actions/**"],
       "pinDigests": true
     }
   ]
