@@ -3,7 +3,7 @@
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
 
-    "isolatedModules": true,
+    "erasableSyntaxOnly": true,
     "module": "Preserve",
     "moduleResolution": "bundler",
     "noEmit": true,
