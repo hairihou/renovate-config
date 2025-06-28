@@ -22,7 +22,6 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: |
-          pnpm install
           pnpm --package=renovate dlx renovate-config-validator --strict \
             default.json \
             github-actions.json \
