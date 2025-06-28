@@ -2,10 +2,15 @@
   "extends": ["customManagers:biomeVersions", "group:definitelyTyped", "helpers:disableTypesNodeMajor"],
   "packageRules": [
     {
+      "groupName": "Bundlers",
+      "groupSlug": "bundlers",
+      "extends": ["packages:vite"]
+    },
+    {
       "groupName": "Linters",
       "groupSlug": "linters",
       "extends": ["packages:linters"],
-      "matchPackageNames": ["@biomejs/biome", "globals", "**/eslint-**"]
+      "matchPackageNames": ["@biomejs/biome", "@commitlint/**", "globals", "lefthook", "**/eslint-**", "**-eslint-**"]
     },
     {
       "groupName": "Storybook",

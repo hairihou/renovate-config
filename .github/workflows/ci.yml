@@ -23,5 +23,10 @@ jobs:
           cache: pnpm
       - run: |
           pnpm install
-          pnpm lint
-          pnpm validate
+          pnpm --package=renovate dlx renovate-config-validator --strict \
+            default.json \
+            github-actions.json \
+            node-project.json \
+            pull-request.json \
+            renovate.json \
+            schedule.json

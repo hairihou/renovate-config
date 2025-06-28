@@ -3,10 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
-    "typecheck": "tsc -b",
-    "format": "prettier --write .",
-    "validate": "tsx ./src/scripts/validator.ts"
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -15,14 +12,7 @@
   "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@tsconfig/node-lts": "^22.0.2",
-    "@types/node": "^22.15.32",
-    "eslint": "^9.29.0",
-    "lefthook": "^1.11.3",
-    "prettier": "^3.5.3",
-    "tsx": "^4.20.3",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.34.1"
+    "lefthook": "^1.11.14",
+    "prettier": "^3.6.2"
   }
 }
