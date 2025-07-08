@@ -1,4 +1,5 @@
 {
   "draftPR": true,
+  "rangeStrategy": "bump",
   "rebaseWhen": "conflicted"
 }
