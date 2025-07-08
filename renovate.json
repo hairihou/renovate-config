@@ -7,7 +7,6 @@
     "group:allNonMajor"
   ],
   "prConcurrentLimit": 3,
-  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchUpdateTypes": ["patch"],
