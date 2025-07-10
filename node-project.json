@@ -10,7 +10,7 @@
       "groupName": "Linters",
       "groupSlug": "linters",
       "extends": ["packages:linters"],
-      "matchPackageNames": ["@biomejs/biome", "@commitlint/**", "globals", "lefthook", "**/eslint-**", "**-eslint-**"]
+      "matchPackageNames": ["@biomejs/biome", "@commitlint/**", "globals", "lefthook", "prettier-plugin-**", "**/eslint-**", "**-eslint-**"]
     },
     {
       "groupName": "Storybook",
