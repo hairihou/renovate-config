@@ -12,7 +12,7 @@
   "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "lefthook": "^1.11.14",
+    "lefthook": "^1.12.2",
     "prettier": "^3.6.2"
   }
 }
