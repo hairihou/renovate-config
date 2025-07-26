@@ -1,5 +1,5 @@
 {
-  "assigneesFromCodeOwners": true,
+  "assignees": ["hairihou"],
   "draftPR": true,
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted"
