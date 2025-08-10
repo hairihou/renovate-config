@@ -1,4 +1,4 @@
-# Renovate Config
+# renovate-config
 
 This repository provides a shared configuration for [Renovate Bot](https://www.mend.io/free-developer-tools/renovate/).
 
