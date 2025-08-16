@@ -1,10 +1,10 @@
 # renovate-config
 
-This repository provides a shared configuration for [Renovate Bot](https://www.mend.io/free-developer-tools/renovate/).
+This repository provides a shared configuration for Renovate.
 
 ## Usage
 
-You can use these configurations in your own `.renovaterc.json` or `renovate.json` file by extending them.
+You can use these configurations in your own `renovate.json` file by extending them.
 
 ### Main Configuration
 
@@ -13,16 +13,11 @@ The main configuration is available in `renovate.json`. To use it, add the follo
 ```json
 {
   "extends": [
+    "config:recommended",
     "github>hairihou/renovate-config"
   ]
 }
 ```
-
-This configuration includes:
-- `config:recommended` preset from Renovate.
-- Groups all non-major updates into a single Pull Request (`group:allNonMajor`).
-- Sets a concurrent Pull Request limit to 3 (`prConcurrentLimit`).
-- Disables automatic updates for `patch` releases.
 
 ### Individual Configurations
 
