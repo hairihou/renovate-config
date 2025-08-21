@@ -22,11 +22,5 @@ jobs:
           node-version: 22.18.0
           cache: pnpm
       - run: |
-          pnpm --package=renovate dlx renovate-config-validator --strict \
-            dashboard.json \
-            default.json \
-            github-actions.json \
-            node-project.json \
-            pull-request.json \
-            renovate.json \
-            schedule.json
+          pnpm install
+          pnpm --package=renovate dlx renovate-config-validator --strict $(find . -maxdepth 1 -name "*.json" -not -name "package*.json")
