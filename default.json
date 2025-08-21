@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>hairihou/renovate-config:dashboard",
+    ":disableDependencyDashboard",
     "github>hairihou/renovate-config:github-actions",
     "github>hairihou/renovate-config:node-project",
     "github>hairihou/renovate-config:pull-request",
