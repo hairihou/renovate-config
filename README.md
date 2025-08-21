@@ -1,7 +1,5 @@
 # renovate-config
 
-This repository provides a shared configuration for Renovate.
-
 ## Usage
 
 You can use these configurations in your own `renovate.json` file by extending them.
