@@ -33,7 +33,6 @@ You can also extend individual configurations as needed. For example, to only us
 
 ## Available Configurations
 
-- `dashboard.json`: Configuration for the Renovate Dependency Dashboard.
 - `github-actions.json`: Settings for updating GitHub Actions.
 - `node-project.json`: Rules specific to Node.js projects (e.g., `package.json`).
 - `pull-request.json`: Settings related to Pull Request creation.
