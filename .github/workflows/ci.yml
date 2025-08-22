@@ -24,4 +24,4 @@ jobs:
           cache: pnpm
       - run: |
           pnpm install
-          pnpm --package=renovate dlx renovate-config-validator --strict $(find . -maxdepth 1 -name "*.json" -not -name "package*.json")
+          pnpm --package=renovate dlx renovate-config-validator --strict $(find . -maxdepth 1 -name "*.json" -not -name "package.json")
