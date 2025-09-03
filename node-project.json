@@ -4,7 +4,8 @@
     {
       "groupName": "Bundlers",
       "groupSlug": "bundlers",
-      "extends": ["packages:vite"]
+      "extends": ["packages:vite"],
+      "matchPackageNames": ["rollup-plugin-**"]
     },
     {
       "groupName": "Linters",
@@ -21,15 +22,15 @@
     {
       "groupName": "Storybook",
       "groupSlug": "storybook",
-      "matchPackageNames": ["@chromatic-com/storybook", "@storybook/**", "storybook"]
+      "matchPackageNames": ["@chromatic-com/storybook", "@storybook/**", "eslint-plugin-storybook", "storybook"]
     },
     {
       "groupName": "Tailwind",
       "groupSlug": "tailwind",
-      "matchPackageNames": ["@tailwindcss/**", "style-dictionary", "tailwindcss"]
+      "matchPackageNames": ["@fontsource/**", "@tailwindcss/**", "style-dictionary", "tailwindcss"]
     },
     {
-      "matchPackageNames": ["happy-dom", "lefthook"],
+      "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
       "matchUpdateTypes": ["patch"],
       "enabled": false
     }
