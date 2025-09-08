@@ -1,9 +1,9 @@
 {
   "assignees": ["hairihou"],
-  "branchConcurrentLimit": 16,
   "draftPR": true,
   "minimumReleaseAge": "3 days",
   "postUpdateOptions": ["pnpmDedupe"],
+  "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted"
 }
