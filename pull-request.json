@@ -1,6 +1,7 @@
 {
   "assignees": ["hairihou"],
   "draftPR": true,
+  "postUpdateOptions": ["pnpmDedupe"],
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted"
 }
