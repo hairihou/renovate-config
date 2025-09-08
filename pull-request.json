@@ -1,6 +1,7 @@
 {
   "assignees": ["hairihou"],
   "draftPR": true,
+  "minimumReleaseAge": "3 days",
   "postUpdateOptions": ["pnpmDedupe"],
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted"
