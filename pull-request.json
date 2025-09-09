@@ -1,7 +1,6 @@
 {
-  "assignees": ["hairihou"],
   "draftPR": true,
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "7 days",
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
