@@ -10,10 +10,7 @@ The main configuration is available in `renovate.json`. To use it, add the follo
 
 ```json
 {
-  "extends": [
-    "config:recommended",
-    "github>hairihou/renovate-config"
-  ]
+  "extends": ["github>hairihou/renovate-config"]
 }
 ```
 
@@ -23,15 +20,13 @@ You can also extend individual configurations as needed. For example, to only us
 
 ```json
 {
-  "extends": [
-    "github>hairihou/renovate-config:node-project"
-  ]
+  "extends": ["github>hairihou/renovate-config:node-project"]
 }
 ```
 
-## Available Configurations
+## Available Presets
 
-- `github-actions.json`: Settings for updating GitHub Actions.
-- `node-project.json`: Rules specific to Node.js projects (e.g., `package.json`).
-- `pull-request.json`: Settings related to Pull Request creation.
-- `schedule.json`: Defines when Renovate should run.
+- `github-actions`: Settings for updating GitHub Actions.
+- `node-project`: Rules specific to Node.js projects (e.g., `package.json`).
+- `pull-request`: Settings related to Pull Request creation.
+- `schedule`: Defines when Renovate should run.
