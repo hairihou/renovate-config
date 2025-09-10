@@ -14,7 +14,7 @@ The main configuration is available in `renovate.json`. To use it, add the follo
 }
 ```
 
-### Individual Configurations
+### Individual Preset
 
 You can also extend individual configurations as needed. For example, to only use the Node.js project settings:
 
@@ -23,10 +23,3 @@ You can also extend individual configurations as needed. For example, to only us
   "extends": ["github>hairihou/renovate-config:node-project"]
 }
 ```
-
-## Available Presets
-
-- `github-actions`: Settings for updating GitHub Actions.
-- `node-project`: Rules specific to Node.js projects (e.g., `package.json`).
-- `pull-request`: Settings related to Pull Request creation.
-- `schedule`: Defines when Renovate should run.
