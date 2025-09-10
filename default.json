@@ -16,10 +16,10 @@
       "matchPackageNames": ["!/^actions//"],
       "pinDigests": true
     }
-  ]
+  ],
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
-  "rebaseWhen": "conflicted"
+  "rebaseWhen": "conflicted",
   "schedule": ["after 5:00 before 21:00"]
 }
