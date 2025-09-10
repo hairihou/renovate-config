@@ -3,8 +3,8 @@
   "extends": [
     "config:recommended",
     ":disableDependencyDashboard",
-    "github>hairihou/renovate-config:node-project",
-    "github>hairihou/renovate-config:schedule"
+    ":timezone(Asia/Tokyo)",
+    "github>hairihou/renovate-config:node-project"
   ],
   "draftPR": true,
   "minimumReleaseAge": "7 days",
@@ -21,4 +21,5 @@
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted"
+  "schedule": ["after 5:00 before 21:00"]
 }
