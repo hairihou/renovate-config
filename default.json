@@ -16,5 +16,19 @@
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted",
-  "schedule": ["after 4:00 before 23:00"]
+  "schedule": ["after 4:00 before 23:00"],
+  "packageRules": [
+    {
+      "description": "Shorter minimum release age for mise CLI tools",
+      "managers": ["mise"],
+      "matchPackageNames": ["!python"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Longer minimum release age for Python runtime",
+      "managers": ["mise"],
+      "matchPackageNames": ["python"],
+      "minimumReleaseAge": "14 days"
+    }
+  ]
 }
