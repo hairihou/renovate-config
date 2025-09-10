@@ -6,15 +6,26 @@
     ":timezone(Asia/Tokyo)",
     "github>hairihou/renovate-config:node-project"
   ],
-  "ignorePresets": [
-    "abandonments:recommended",
-    ":pinDevDependencies"
-  ],
+  "ignorePresets": ["abandonments:recommended", ":pinDevDependencies"],
   "draftPR": true,
   "minimumReleaseAge": "7 days",
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted",
-  "schedule": ["after 4:00 before 23:00"]
+  "schedule": ["after 4:00 before 22:00"],
+  "packageRules": [
+    {
+      "description": "Shorter minimum release age for mise CLI tools",
+      "matchManagers": ["mise"],
+      "matchPackageNames": ["!python"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Longer minimum release age for Python runtime",
+      "matchManagers": ["mise"],
+      "matchPackageNames": ["python"],
+      "minimumReleaseAge": "14 days"
+    }
+  ]
 }
