@@ -4,9 +4,10 @@
     "config:recommended",
     ":disableDependencyDashboard",
     "github>hairihou/renovate-config:node-project",
-    "github>hairihou/renovate-config:pull-request",
     "github>hairihou/renovate-config:schedule"
   ],
+  "draftPR": true,
+  "minimumReleaseAge": "7 days",
   "packageRules": [
     {
       "groupName": "3rdparty Actions",
@@ -16,4 +17,8 @@
       "pinDigests": true
     }
   ]
+  "postUpdateOptions": ["pnpmDedupe"],
+  "prConcurrentLimit": 16,
+  "rangeStrategy": "bump",
+  "rebaseWhen": "conflicted"
 }
