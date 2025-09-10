@@ -1,22 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     ":disableDependencyDashboard",
     ":timezone(Asia/Tokyo)",
     "github>hairihou/renovate-config:node-project"
   ],
+  "ignorePresets": [
+    "abandonments:recommended",
+    ":pinDevDependencies"
+  ],
   "draftPR": true,
   "minimumReleaseAge": "7 days",
-  "packageRules": [
-    {
-      "groupName": "3rdparty Actions",
-      "groupSlug": "3rdparty-actions",
-      "matchDepTypes": ["action"],
-      "matchPackageNames": ["!/^actions//"],
-      "pinDigests": true
-    }
-  ],
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
