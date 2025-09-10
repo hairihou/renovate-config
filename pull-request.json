@@ -1,8 +1,0 @@
-{
-  "draftPR": true,
-  "minimumReleaseAge": "7 days",
-  "postUpdateOptions": ["pnpmDedupe"],
-  "prConcurrentLimit": 16,
-  "rangeStrategy": "bump",
-  "rebaseWhen": "conflicted"
-}
