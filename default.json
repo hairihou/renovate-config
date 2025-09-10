@@ -3,9 +3,17 @@
   "extends": [
     "config:recommended",
     ":disableDependencyDashboard",
-    "github>hairihou/renovate-config:github-actions",
     "github>hairihou/renovate-config:node-project",
     "github>hairihou/renovate-config:pull-request",
     "github>hairihou/renovate-config:schedule"
+  ],
+  "packageRules": [
+    {
+      "groupName": "3rdparty Actions",
+      "groupSlug": "3rdparty-actions",
+      "matchDepTypes": ["action"],
+      "matchPackageNames": ["!/^actions//"],
+      "pinDigests": true
+    }
   ]
 }
