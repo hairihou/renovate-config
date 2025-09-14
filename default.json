@@ -8,7 +8,7 @@
   ],
   "ignorePresets": ["abandonments:recommended", ":pinDevDependencies"],
   "draftPR": true,
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "7 days",
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
@@ -16,7 +16,11 @@
   "schedule": ["after 4:00 before 22:00"],
   "packageRules": [
     {
-      "description": "Longer minimum release age for Python runtime",
+      "matchManagers": ["mise"],
+      "matchPackageNames": ["!python"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
       "matchManagers": ["mise"],
       "matchPackageNames": ["python"],
       "minimumReleaseAge": "14 days"
