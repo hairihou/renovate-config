@@ -2,24 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices",
-    ":disableDependencyDashboard",
     ":timezone(Asia/Tokyo)",
     "github>hairihou/renovate-config:node-project"
   ],
-  "ignorePresets": ["abandonments:recommended", ":pinDevDependencies"],
+  "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
-  "minimumReleaseAge": "7 days",
+  "minimumReleaseAge": "3 days",
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted",
   "schedule": ["after 4:00 before 22:00"],
   "packageRules": [
-    {
-      "matchManagers": ["mise"],
-      "matchPackageNames": ["!python"],
-      "minimumReleaseAge": "3 days"
-    },
     {
       "matchManagers": ["mise"],
       "matchPackageNames": ["python"],
