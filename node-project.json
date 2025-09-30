@@ -39,10 +39,6 @@
       "matchPackageNames": ["@fontsource/**", "@tailwindcss/**", "style-dictionary", "tailwindcss"]
     },
     {
-      "matchPackageNames": ["renovate"],
-      "schedule": ["before 4:00 on monday"]
-    },
-    {
       "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
       "matchUpdateTypes": ["patch"],
       "enabled": false
