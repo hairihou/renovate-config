@@ -17,7 +17,12 @@
     },
     {
       "matchPackageNames": ["renovate"],
-      "schedule": ["before 4:00 on monday"]
+      "schedule": ["* 0-3 * * 6"]
+    },
+    {
+      "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
+      "matchUpdateTypes": ["patch"],
+      "schedule": ["* * 1 * *"]
     }
   ]
 }

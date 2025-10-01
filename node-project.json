@@ -37,11 +37,6 @@
       "groupName": "Tailwind",
       "groupSlug": "tailwind",
       "matchPackageNames": ["@fontsource/**", "@tailwindcss/**", "style-dictionary", "tailwindcss"]
-    },
-    {
-      "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
-      "matchUpdateTypes": ["patch"],
-      "enabled": false
     }
   ]
 }
