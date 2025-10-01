@@ -17,7 +17,7 @@
     },
     {
       "matchPackageNames": ["renovate"],
-      "schedule": ["before 4:00 on monday"]
+      "schedule": ["before 4:00 on saturday"]
     }
   ]
 }
