@@ -8,7 +8,7 @@
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
   "rebaseWhen": "conflicted",
-  "schedule": ["0 4-20/4 * * *"],
+  "schedule": ["0 4-22/6 * * *"],
   "packageRules": [
     {
       "matchManagers": ["mise"],
@@ -17,12 +17,12 @@
     },
     {
       "matchPackageNames": ["renovate"],
-      "schedule": ["* 0-3 * * 6"]
+      "schedule": ["0 0 * * 0"]
     },
     {
       "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
       "matchUpdateTypes": ["patch"],
-      "schedule": ["* * 1 * *"]
+      "schedule": ["0 0 1 * *"]
     }
   ]
 }
