@@ -3,7 +3,7 @@
   "extends": ["config:best-practices", ":timezone(Asia/Tokyo)", "github>hairihou/renovate-config:node-project"],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
-  "minimumReleaseAge": "1 days",
+  "minimumReleaseAge": "2 days",
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
