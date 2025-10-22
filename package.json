@@ -6,10 +6,6 @@
   "scripts": {
     "format": "prettier --write ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hairihou/renovate-config.git"
-  },
   "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
