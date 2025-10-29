@@ -7,7 +7,7 @@
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
-  "schedule": ["* 4-22/2 * * *"],
+  "schedule": ["* 4-23/1 * * *"],
   "packageRules": [
     {
       "matchManagers": ["mise"],
