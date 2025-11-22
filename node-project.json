@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["customManagers:biomeVersions", "group:definitelyTyped", "helpers:disableTypesNodeMajor"],
+  "extends": ["group:definitelyTyped", "helpers:disableTypesNodeMajor"],
   "packageRules": [
     {
       "groupName": "Bundlers",
