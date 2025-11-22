@@ -3,7 +3,7 @@
   "extends": [
     "config:best-practices",
     ":timezone(Asia/Tokyo)",
-    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigestsToSemver",
     "github>hairihou/renovate-config:node-project"
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
