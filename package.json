@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "validate": "renovate-config-validator --strict $(find . -maxdepth 1 -name \"*.json\" -not -name \"package.json\")"
   },
   "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
   "license": "MIT",

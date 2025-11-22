@@ -24,4 +24,4 @@ jobs:
           cache: pnpm
       - run: |
           pnpm install
-          pnpm renovate-config-validator --strict $(find . -maxdepth 1 -name "*.json" -not -name "package.json")
+          pnpm validate
