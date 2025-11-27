@@ -14,7 +14,7 @@
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
-  "schedule": ["* 4-23/1 * * *"],
+  "schedule": ["* 8-19 * * *"],
   "packageRules": [
     {
       "matchManagers": ["mise"],
@@ -22,8 +22,8 @@
       "minimumReleaseAge": "14 days"
     },
     {
-      "matchPackageNames": ["python", "renovate", "uv"],
-      "schedule": ["* 0 * * 0"]
+      "matchPackageNames": ["pipx:git+https://github.com/github/*.git", "renovate"],
+      "schedule": ["* 0 1 * *"]
     },
     {
       "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
