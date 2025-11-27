@@ -14,7 +14,7 @@
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
-  "schedule": ["after 4am and before midnight"],
+  "schedule": ["* 8-19 * * *"],
   "packageRules": [
     {
       "matchManagers": ["mise"],
@@ -23,12 +23,12 @@
     },
     {
       "matchPackageNames": ["pipx:git+https://github.com/github/*.git", "renovate"],
-      "schedule": ["on the first day of the month"]
+      "schedule": ["* 0 1 * *"]
     },
     {
       "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
       "matchUpdateTypes": ["patch"],
-      "schedule": ["on the first day of the month"]
+      "schedule": ["* 0 1 * *"]
     }
   ]
 }
