@@ -3,6 +3,7 @@
   "extends": [
     "config:best-practices",
     ":timezone(Asia/Tokyo)",
+    "customManagers:biomeVersions",
     "helpers:disableTypesNodeMajor",
     "helpers:pinGitHubActionDigestsToSemver",
     "group:definitelyTyped",
