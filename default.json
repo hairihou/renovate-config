@@ -3,7 +3,9 @@
   "extends": [
     "config:best-practices",
     ":timezone(Asia/Tokyo)",
+    "helpers:disableTypesNodeMajor",
     "helpers:pinGitHubActionDigestsToSemver",
+    "group:definitelyTyped",
     "github>hairihou/renovate-config:node-project"
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
@@ -15,11 +17,11 @@
   "packageRules": [
     {
       "matchManagers": ["mise"],
-      "matchPackageNames": ["python", "uv"],
+      "matchPackageNames": ["python"],
       "minimumReleaseAge": "14 days"
     },
     {
-      "matchPackageNames": ["renovate"],
+      "matchPackageNames": ["python", "renovate", "uv"],
       "schedule": ["* 0 * * 0"]
     },
     {
