@@ -15,7 +15,7 @@
   "packageRules": [
     {
       "matchManagers": ["mise"],
-      "matchPackageNames": ["python"],
+      "matchPackageNames": ["python", "uv"],
       "minimumReleaseAge": "14 days"
     },
     {
