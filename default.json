@@ -11,7 +11,7 @@
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
-  "postUpdateOptions": ["pnpmDedupe"],
+  "postUpdateOptions": ["npmDedupe", "pnpmDedupe"],
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
   "schedule": ["* 8-19 * * *"],
