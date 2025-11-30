@@ -22,7 +22,7 @@
       "minimumReleaseAge": "14 days"
     },
     {
-      "matchPackageNames": ["pipx:git+https://github.com/github/*.git", "renovate"],
+      "matchPackageNames": ["pipx:git+**", "renovate"],
       "schedule": ["* 0 1 * *"]
     },
     {
