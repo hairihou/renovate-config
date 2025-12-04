@@ -7,6 +7,7 @@
     "helpers:disableTypesNodeMajor",
     "helpers:pinGitHubActionDigestsToSemver",
     "group:definitelyTyped",
+    "group:recommended",
     "github>hairihou/renovate-config:node-project"
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
@@ -22,7 +23,7 @@
       "minimumReleaseAge": "14 days"
     },
     {
-      "matchPackageNames": ["pipx:git+**", "renovate"],
+      "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "renovate"],
       "schedule": ["* 0 1 * *"]
     },
     {
