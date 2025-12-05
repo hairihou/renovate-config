@@ -7,7 +7,6 @@
     "helpers:disableTypesNodeMajor",
     "helpers:pinGitHubActionDigestsToSemver",
     "group:definitelyTyped",
-    "group:recommended",
     "github>hairihou/renovate-config:node-project"
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
