@@ -13,6 +13,7 @@
   "draftPR": true,
   "postUpdateOptions": ["npmDedupe", "pnpmDedupe"],
   "prConcurrentLimit": 16,
+  "prHourlyLimit": 0,
   "rangeStrategy": "bump",
   "schedule": ["* 7-22 * * *"],
   "packageRules": [
