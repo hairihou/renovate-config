@@ -1,17 +1,19 @@
 {
   "name": "renovate-config",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
   "type": "module",
   "scripts": {
-    "format": "prettier --write .",
-    "validate": "renovate-config-validator --strict $(find . -maxdepth 1 -name \"*.json\" -not -name \"package.json\")"
+    "fmt": "oxfmt --write .",
+    "lint": "oxlint .",
+    "validate": "renovate-config-validator --strict $(find . -maxdepth 1 -name '*.json' -not -name '.oxfmtrc.json' -not -name 'package.json')"
   },
-  "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "lefthook": "^2.1.0",
-    "prettier": "^3.8.1",
+    "oxfmt": "^0.28.0",
+    "oxlint": "^1.43.0",
     "renovate": "^41.173.1"
   }
 }

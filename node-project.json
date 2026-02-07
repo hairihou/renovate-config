@@ -2,39 +2,39 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "groupName": "Bundlers",
-      "groupSlug": "bundlers",
+      "groupName": "bundlers",
       "extends": ["packages:vite"],
       "matchPackageNames": ["rollup-plugin-**"]
     },
     {
-      "groupName": "Linters",
-      "groupSlug": "linters",
+      "groupName": "linters",
       "extends": ["packages:linters"],
       "matchPackageNames": [
         "@biomejs/biome",
         "@commitlint/**",
         "globals",
         "lefthook",
-        "prettier-plugin-**",
-        "**/eslint-**",
-        "**-eslint-**"
+        "oxfmt",
+        "prettier-**",
+        "**eslint-**"
       ]
     },
     {
-      "groupName": "NPM Tools",
-      "groupSlug": "npm-tools",
+      "groupName": "npm tools",
       "matchManagers": ["github-actions", "mise"],
       "matchPackageNames": ["node", "pnpm"]
     },
     {
-      "groupName": "Storybook",
-      "groupSlug": "storybook",
-      "matchPackageNames": ["@chromatic-com/storybook", "@storybook/**", "eslint-plugin-storybook", "storybook"]
+      "groupName": "storybook",
+      "matchPackageNames": [
+        "@chromatic-com/storybook",
+        "@storybook/**",
+        "eslint-plugin-storybook",
+        "storybook"
+      ]
     },
     {
-      "groupName": "Tailwind",
-      "groupSlug": "tailwind",
+      "groupName": "style tools",
       "matchPackageNames": ["@fontsource/**", "@tailwindcss/**", "style-dictionary", "tailwindcss"]
     }
   ]

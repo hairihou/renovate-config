@@ -23,11 +23,14 @@
       "minimumReleaseAge": "14 days"
     },
     {
-      "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "renovate"],
-      "schedule": ["* 0 1 * *"]
-    },
-    {
-      "matchPackageNames": ["@types/node", "happy-dom", "lefthook"],
+      "groupName": "monthly patch updates",
+      "matchPackageNames": [
+        "@types/node",
+        "happy-dom",
+        "lefthook",
+        "pipx:git+https://github.com/*/*.git",
+        "renovate"
+      ],
       "matchUpdateTypes": ["patch"],
       "schedule": ["* 0 1 * *"]
     }
