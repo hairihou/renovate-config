@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "fmt": "oxfmt --write .",
-    "lint": "oxlint .",
+    "lint": "oxlint --max-warnings 0 .",
     "validate": "renovate-config-validator --strict $(find . -maxdepth 1 -name '*.json' -not -name '.oxfmtrc.json' -not -name 'package.json')"
   },
   "devDependencies": {
