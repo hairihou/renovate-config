@@ -22,7 +22,7 @@
     {
       "groupName": "npm tools",
       "matchManagers": ["github-actions", "mise"],
-      "matchPackageNames": ["node", "pnpm"]
+      "matchPackageNames": ["bun", "deno", "node", "pnpm"]
     },
     {
       "groupName": "storybook",
