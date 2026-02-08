@@ -18,8 +18,7 @@
   "schedule": ["* 7-22 * * *"],
   "packageRules": [
     {
-      "matchManagers": ["mise"],
-      "matchPackageNames": ["python"],
+      "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "python"],
       "minimumReleaseAge": "14 days"
     }
   ]
