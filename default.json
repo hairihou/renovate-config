@@ -21,18 +21,6 @@
       "matchManagers": ["mise"],
       "matchPackageNames": ["python"],
       "minimumReleaseAge": "14 days"
-    },
-    {
-      "groupName": "monthly patch updates",
-      "matchPackageNames": [
-        "@types/node",
-        "happy-dom",
-        "lefthook",
-        "pipx:git+https://github.com/*/*.git",
-        "renovate"
-      ],
-      "matchUpdateTypes": ["patch"],
-      "schedule": ["* 0 1 * *"]
     }
   ]
 }
