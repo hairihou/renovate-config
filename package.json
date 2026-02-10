@@ -14,6 +14,6 @@
     "lefthook": "^2.1.0",
     "oxfmt": "^0.28.0",
     "oxlint": "^1.43.0",
-    "renovate": "^43.4.0"
+    "renovate": "^43.4.2"
   }
 }
