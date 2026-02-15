@@ -11,9 +11,9 @@
     "validate": "renovate-config-validator --strict $(find . -maxdepth 1 -name '*.json' -not -name '.oxfmtrc.json' -not -name 'package.json')"
   },
   "devDependencies": {
-    "lefthook": "^2.1.0",
-    "oxfmt": "^0.31.0",
-    "oxlint": "^1.46.0",
+    "lefthook": "^2.1.1",
+    "oxfmt": "^0.32.0",
+    "oxlint": "^1.47.0",
     "renovate": "^43.8.5"
   }
 }
