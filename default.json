@@ -13,9 +13,8 @@
   "draftPR": true,
   "postUpdateOptions": ["npmDedupe", "pnpmDedupe"],
   "prConcurrentLimit": 16,
-  "prHourlyLimit": 0,
   "rangeStrategy": "bump",
-  "schedule": ["* 7-22 * * *"],
+  "schedule": ["* 4-22 * * *"],
   "packageRules": [
     {
       "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "python"],
