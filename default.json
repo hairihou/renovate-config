@@ -4,9 +4,9 @@
     "config:best-practices",
     ":timezone(Asia/Tokyo)",
     "customManagers:biomeVersions",
+    "group:definitelyTyped",
     "helpers:disableTypesNodeMajor",
     "helpers:pinGitHubActionDigestsToSemver",
-    "group:definitelyTyped",
     "github>hairihou/renovate-config:node-project"
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
