@@ -1,4 +1,4 @@
-# renovate-config
+# @hairihou/renovate-config
 
 ## Usage
 
