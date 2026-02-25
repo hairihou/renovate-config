@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["pnpm-lock.yaml"],
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
   "singleQuote": true,
   "sortPackageJson": {
     "sortScripts": true
