@@ -12,7 +12,8 @@
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
   "lockFileMaintenance": {
-    "automerge": true
+    "automerge": true,
+    "draftPR": false
   },
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
