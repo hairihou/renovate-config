@@ -12,15 +12,14 @@
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
   "lockFileMaintenance": {
+    "assignAutomerge": true,
     "automerge": true,
-    "draftPR": false
+    "draftPR": false,
+    "platformAutomerge": false
   },
-  "prConcurrentLimit": 16,
+  "prConcurrentLimit": 8,
   "rangeStrategy": "bump",
   "schedule": ["* 4-22 * * *"],
-  "vulnerabilityAlerts": {
-    "enabled": true
-  },
   "packageRules": [
     {
       "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "python"],
