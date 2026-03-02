@@ -14,7 +14,9 @@
   "lockFileMaintenance": {
     "assignAutomerge": true,
     "automerge": true,
-    "draftPR": false
+    "draftPR": false,
+    "ignoreTests": true,
+    "platformAutomerge": false
   },
   "prConcurrentLimit": 8,
   "rangeStrategy": "bump",
