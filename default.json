@@ -18,9 +18,8 @@
     "ignoreTests": true,
     "platformAutomerge": false
   },
-  "prConcurrentLimit": 8,
+  "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
-  "schedule": ["* 4-22 * * *"],
   "packageRules": [
     {
       "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "python"],
