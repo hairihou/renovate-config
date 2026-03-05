@@ -22,7 +22,7 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "python", "uv"],
+      "matchPackageNames": ["pipx:git+https://github.com/*/*.git", "python", "renovate", "uv"],
       "minimumReleaseAge": "14 days",
       "schedule": ["before 8am on monday"]
     }
