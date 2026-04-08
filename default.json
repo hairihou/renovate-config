@@ -23,7 +23,7 @@
   "packageRules": [
     {
       "matchDepNames": ["pipx:git+https://github.com/*/*.git", "python", "renovate", "uv"],
-      "minimumReleaseAge": "3 days",
+      "minimumReleaseAge": "7 days",
       "schedule": ["before 8am on monday"]
     }
   ]
