@@ -15,7 +15,7 @@ importers:
         specifier: ^0.45.0
         version: 0.45.0
       renovate:
-        specifier: ^43.110.16
+        specifier: ^43.111.0
         version: 43.132.0(typanion@3.14.0)
 
 packages:
