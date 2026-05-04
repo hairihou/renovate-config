@@ -11,19 +11,12 @@
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
-  "lockFileMaintenance": {
-    "assignAutomerge": true,
-    "automerge": true,
-    "draftPR": false,
-    "ignoreTests": true,
-    "platformAutomerge": false
-  },
-  "prConcurrentLimit": 16,
+  "prConcurrentLimit": 32,
   "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchDepNames": ["pipx:git+https://github.com/*/*.git", "python", "renovate", "uv"],
-      "minimumReleaseAge": "7 days",
+      "minimumReleaseAge": "3 days",
       "schedule": ["before 8am on monday"]
     }
   ]
