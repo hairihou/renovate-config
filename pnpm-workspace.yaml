@@ -5,4 +5,5 @@ allowBuilds:
   lefthook: false
   protobufjs: false
   re2: false
+
 strictPeerDependencies: true
