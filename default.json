@@ -3,7 +3,6 @@
   "extends": [
     "config:best-practices",
     ":timezone(Asia/Tokyo)",
-    "customManagers:biomeVersions",
     "group:definitelyTyped",
     "helpers:disableTypesNodeMajor",
     "helpers:pinGitHubActionDigestsToSemver",
@@ -15,7 +14,7 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "matchDepNames": ["pipx:git+https://github.com/*/*.git", "python", "renovate", "uv"],
+      "matchDepNames": ["pipx:git+https://github.com/*/*.git", "python"],
       "minimumReleaseAge": "3 days",
       "schedule": ["before 8am on monday"]
     }
