@@ -18,7 +18,7 @@
     },
     {
       "groupName": "managers",
-      "matchManagers": ["github-actions", "mise", "npm"],
+      "matchManagers": ["github-actions", "mise"],
       "matchPackageNames": ["aube", "bun", "deno", "node", "pnpm"]
     },
     {
