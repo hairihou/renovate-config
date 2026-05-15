@@ -10,19 +10,16 @@
       "groupName": "linters",
       "extends": ["packages:linters"],
       "matchPackageNames": [
-        "@biomejs/biome",
-        "@commitlint/**",
         "globals",
-        "lefthook",
         "oxfmt",
         "prettier-**",
         "**eslint-**"
       ]
     },
     {
-      "groupName": "npm tools",
-      "matchManagers": ["github-actions", "mise"],
-      "matchPackageNames": ["bun", "deno", "node", "pnpm"]
+      "groupName": "managers",
+      "matchManagers": ["github-actions", "mise", "npm"],
+      "matchPackageNames": ["aube", "bun", "deno", "node", "pnpm"]
     },
     {
       "groupName": "storybook",
