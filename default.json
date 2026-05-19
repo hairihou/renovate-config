@@ -5,8 +5,7 @@
     ":timezone(Asia/Tokyo)",
     "group:definitelyTyped",
     "helpers:disableTypesNodeMajor",
-    "helpers:pinGitHubActionDigestsToSemver",
-    "github>hairihou/renovate-config:node-project"
+    "helpers:pinGitHubActionDigestsToSemver"
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
@@ -14,9 +13,22 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "groupName": "linters",
+      "extends": ["packages:linters"],
+      "matchPackageNames": ["globals", "oxfmt", "prettier-plugin-**"]
+    },
+    {
       "matchDepNames": ["pipx:git+https://github.com/*/*.git", "python"],
       "minimumReleaseAge": "3 days",
       "schedule": ["before 8am on monday"]
+    },
+    {
+      "matchDepNames": ["pipx:git+https://github.com/NousResearch/hermes-agent.git"],
+      "fetchChangeLogs": "off"
+    },
+    {
+      "matchPackageNames": ["pnpm"],
+      "minimumReleaseAge": "0 days"
     }
   ]
 }
