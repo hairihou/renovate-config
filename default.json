@@ -9,13 +9,13 @@
   ],
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
-  "prConcurrentLimit": 32,
+  "prConcurrentLimit": 24,
   "rangeStrategy": "bump",
   "packageRules": [
     {
       "groupName": "linters",
       "extends": ["packages:linters"],
-      "matchPackageNames": ["globals", "oxfmt", "prettier-plugin-**"]
+      "matchPackageNames": ["globals", "oxfmt"]
     },
     {
       "matchDepNames": ["pipx:git+https://github.com/*/*.git", "python"],
