@@ -21,7 +21,7 @@
       "matchPackageNames": ["globals", "oxfmt"]
     },
     {
-      "matchDepNames": ["pipx:git+https://github.com/*/*.git", "python"],
+      "matchDepNames": ["ollama", "pipx:git+https://github.com/*/*.git", "python"],
       "minimumReleaseAge": "3 days",
       "schedule": ["before 8am on monday"]
     },
