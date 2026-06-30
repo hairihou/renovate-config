@@ -21,9 +21,13 @@
       "matchPackageNames": ["globals", "oxfmt"]
     },
     {
-      "matchDepNames": ["ollama", "pipx:git+https://github.com/*/*.git", "python"],
-      "minimumReleaseAge": "3 days",
-      "schedule": ["before 8am on monday"]
+      "matchManagers": ["mise"],
+      "minimumReleaseAge": "1 day"
+    },
+    {
+      "matchManagers": ["mise"],
+      "matchDepNames": ["claude-code", "codex", "opencode"],
+      "minimumReleaseAge": "0 days"
     },
     {
       "matchDepNames": ["pipx:git+https://github.com/NousResearch/hermes-agent.git"],
