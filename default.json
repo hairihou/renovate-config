@@ -10,7 +10,7 @@
   "ignorePresets": [":dependencyDashboard", ":pinDevDependencies"],
   "draftPR": true,
   "lockFileMaintenance": {
-    "schedule": ["on the first day of the month"]
+    "schedule": ["before 1am on the first day of the month"]
   },
   "prConcurrentLimit": 24,
   "rangeStrategy": "bump",
