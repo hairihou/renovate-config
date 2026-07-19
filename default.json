@@ -32,10 +32,6 @@
     {
       "matchDepNames": ["pipx:git+https://github.com/NousResearch/hermes-agent.git"],
       "fetchChangeLogs": "off"
-    },
-    {
-      "matchPackageNames": ["pnpm"],
-      "minimumReleaseAge": "0 days"
     }
   ]
 }
