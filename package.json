@@ -12,6 +12,6 @@
   "devDependencies": {
     "lefthook": "^2.1.10",
     "oxfmt": "^0.59.0",
-    "renovate": "^43.270.0"
+    "renovate": "^43.275.0"
   }
 }
