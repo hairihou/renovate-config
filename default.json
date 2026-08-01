@@ -12,7 +12,6 @@
   "lockFileMaintenance": {
     "schedule": ["before 4am on the first day of the month"]
   },
-  "prConcurrentLimit": 24,
   "rangeStrategy": "bump",
   "packageRules": [
     {
@@ -28,10 +27,6 @@
       "matchManagers": ["mise"],
       "matchDepNames": ["claude-code", "codex", "opencode"],
       "minimumReleaseAge": "0 days"
-    },
-    {
-      "matchDepNames": ["pipx:git+https://github.com/NousResearch/hermes-agent.git"],
-      "fetchChangeLogs": "off"
     }
   ]
 }
