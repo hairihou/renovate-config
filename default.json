@@ -25,7 +25,7 @@
     },
     {
       "matchManagers": ["mise"],
-      "matchDepNames": ["claude-code", "codex", "opencode"],
+      "matchDepNames": ["claude-code"],
       "minimumReleaseAge": "0 days"
     }
   ]
