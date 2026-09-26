@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "lefthook": "^2.1.14",
-    "oxfmt": "^0.68.0",
-    "renovate": "^44.103.7"
+    "oxfmt": "^0.70.0",
+    "renovate": "^44.111.2"
   }
 }
