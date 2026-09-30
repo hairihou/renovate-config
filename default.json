@@ -13,11 +13,30 @@
     "schedule": ["before 4am on the first day of the month"]
   },
   "rangeStrategy": "bump",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update hk version in hk.pkl amends/import package URLs",
+      "managerFilePatterns": ["/(^|/)hk\\.pkl$/"],
+      "matchStrings": [
+        "github\\.com/jdx/hk/releases/download/v(?<currentValue>\\d+\\.\\d+\\.\\d+)/hk@\\d+\\.\\d+\\.\\d+#"
+      ],
+      "depNameTemplate": "hk",
+      "packageNameTemplate": "jdx/hk",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.+)$",
+      "autoReplaceStringTemplate": "github.com/jdx/hk/releases/download/v{{{newValue}}}/hk@{{{newValue}}}#"
+    }
+  ],
   "packageRules": [
     {
       "groupName": "linters",
       "extends": ["packages:linters"],
       "matchPackageNames": ["globals", "oxfmt"]
+    },
+    {
+      "groupName": "hk",
+      "matchDepNames": ["hk"]
     },
     {
       "matchManagers": ["mise"],
