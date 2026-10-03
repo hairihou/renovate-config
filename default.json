@@ -46,6 +46,11 @@
       "matchManagers": ["mise"],
       "matchDepNames": ["claude-code"],
       "minimumReleaseAge": "0 days"
+    },
+    {
+      "description": "uv bundles its Python download list; wait for a uv release that knows the new CPython",
+      "matchDepNames": ["python"],
+      "minimumReleaseAge": "3 days"
     }
   ]
 }
