@@ -36,7 +36,8 @@
     },
     {
       "groupName": "hk",
-      "matchDepNames": ["hk"]
+      "matchDepNames": ["hk"],
+      "minimumReleaseAge": "1 day"
     },
     {
       "matchManagers": ["mise"],
