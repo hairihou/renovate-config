@@ -2,7 +2,6 @@ allowBuilds:
   better-sqlite3: false
   core-js-pure: false
   dtrace-provider: false
-  lefthook: false
   protobufjs: false
   re2: false
 
