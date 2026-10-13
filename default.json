@@ -43,11 +43,6 @@
       "matchManagers": ["mise"],
       "matchDatasources": ["!npm"],
       "minimumReleaseAge": "1 day"
-    },
-    {
-      "description": "uv bundles its Python download list; wait for a uv release that knows the new CPython",
-      "matchDepNames": ["python"],
-      "minimumReleaseAge": "3 days"
     }
   ]
 }
