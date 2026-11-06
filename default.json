@@ -43,6 +43,11 @@
       "matchManagers": ["mise"],
       "matchDatasources": ["!npm"],
       "minimumReleaseAge": "1 day"
+    },
+    {
+      "matchManagers": ["mise"],
+      "matchDepNames": ["tmux"],
+      "versioning": "loose"
     }
   ]
 }
