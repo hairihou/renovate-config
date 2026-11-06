@@ -8,7 +8,7 @@
     "lint": "renovate-config-validator --strict $(find . -maxdepth 1 -name '*.json' -not -name '.oxfmtrc.json' -not -name 'package.json')"
   },
   "devDependencies": {
-    "oxfmt": "^0.75.0",
-    "renovate": "^44.206.2"
+    "oxfmt": "^0.76.0",
+    "renovate": "^44.210.0"
   }
 }
