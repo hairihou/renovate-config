@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "oxfmt": "^0.77.0",
-    "renovate": "^44.222.2"
+    "renovate": "^44.222.5"
   }
 }
