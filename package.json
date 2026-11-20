@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "fmt": "oxfmt .",
+    "fmt": "oxfmt",
     "lint": "renovate-config-validator --strict $(find . -maxdepth 1 -name '*.json' -not -name '.oxfmtrc.json' -not -name 'package.json')"
   },
   "devDependencies": {
