@@ -6,6 +6,5 @@
   "draftPR": false,
   "major": {
     "automerge": false
-  },
-  "rebaseWhen": "conflicted"
+  }
 }
