@@ -10,5 +10,12 @@
   "devDependencies": {
     "oxfmt": "^0.80.0",
     "renovate": "^44.258.3"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "26.13.1",
+      "onFail": "download"
+    }
   }
 }
