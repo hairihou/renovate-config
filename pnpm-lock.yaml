@@ -15,7 +15,7 @@ importers:
         specifier: ^0.80.0
         version: 0.80.0
       renovate:
-        specifier: ^44.258.3
+        specifier: ^44.263.1
         version: 44.263.5(supports-color@7.2.0)(typanion@3.14.0)
 
 packages:
